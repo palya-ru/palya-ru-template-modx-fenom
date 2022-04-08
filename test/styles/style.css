@@ -1,0 +1,126 @@
+:root{
+    font-size: 16px;
+    box-sizing: border-box;
+}
+*::before,::after{
+    box-sizing: inherit;
+}
+.mb{
+    margin-bottom: 1rem;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    width:950px;
+    margin: 2rem auto 0 auto;
+    padding: 0.75rem;
+    background-color: azure;
+    border: 1px solid #e6e6e6;
+    border-radius: 2px;
+    box-shadow: 0 0 5px 0 rgba(34, 60, 80, 0.13);
+}
+.h1_block{
+    margin-bottom: 0.25rem;
+    display: flex;
+}
+.h1_block h1{
+    margin: 0 1rem 0 0;
+    flex: 0;
+    font-size: 1.85rem;
+    white-space: nowrap;
+}
+.h1_block_line{
+    height: 1px;
+    background-color: black;
+    flex: 1;
+    align-self: center;
+}
+.news{
+    display: flex;
+    padding: 0.75rem;
+    background: linear-gradient(348deg, #e3ffe7 0%, #d9e7ff 100%);
+    height: 193px;
+}
+.news + .news{
+    margin-top: 0.75rem;
+}
+.news_img{
+    flex: 0 0 300px;
+    margin-right: 0.75rem;
+    display: flex;
+}
+.news_img img{
+    width: 100%;
+    object-fit: cover;
+    /*aspect-ratio: 4/3;*/
+}
+.news_container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.news_time{
+    margin: 0;
+    padding: 0;
+    font-size: 0.85rem;
+    color: gray;
+    font-weight: bold;
+}
+.news_head{
+    font-size: 1.5rem;
+    margin: 0.2rem 0 0 0;
+}
+.news_content{
+    flex: 10;
+}
+.news_content p{
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    margin: 0.5rem 0 0 0;
+    line-height: 1.15;
+}
+.news_linkContainer{
+    flex: 1;
+    display: flex;
+    justify-content: right;
+}
+.news_link{
+    display: inline-block;
+    background-color: gold;
+    color: white;
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: bold;
+    padding: 0.5rem 0.75rem;
+    border-radius: 3px;
+    transition: background-color, color 1s;
+}
+.news_link:hover{
+    background-color: hsl(51deg 100% 75%);
+    color: darkgray;
+}
+.post_block{
+    display: flex;
+}
+.post_block__img{
+    max-height: 450px;
+    width: 100%;
+    object-fit: cover;
+}
+.post_time{
+    display: inline-block;
+    background-color: #3ad900;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.25rem 0.95rem;
+    font-family: sans-serif;
+}
+.post_content > p{
+    margin: 1rem 0 0 0;
+}
+.post_content > p + p{
+    margin-top: 0.5rem;
+}
